@@ -1,0 +1,681 @@
+
+/* Reset default margin and padding for various elements */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: greenyellow;
+    color: black;
+    background-image: url('nox\ images/nes backwall.webp');
+    line-height: 1.6;
+}
+
+
+
+/* Header styles */
+header {
+    background-color: black;
+    background-image: url('nox\ images/stock.jpeg');
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 30%;
+    box-shadow: 0 2px 15px purple;
+}
+
+
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+
+nav a:hover {
+    color: #f8ca3d;
+}
+
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    background-image: url('nox\ images/stock.jpeg');
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    border-radius: 30%;
+    box-shadow: 0 -2px 15px purple;
+}
+
+
+footer p {
+    font-weight: bold;
+
+}
+
+
+/* Slider styles */
+.slider {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    height: 300px;
+    background-color: #333;
+    background-image: url('nox\ images/backside.jpeg');
+    box-shadow: 0 2px 15px red;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+/* Slider image styles */
+.slider img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    object-fit: contain; 
+}
+
+
+
+/* Logo container styles */
+.logo-container {
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px purple;
+    height: 100%;
+    transition: transform 1.1s ease, box-shadow 1.1s ease, background-color 1.1s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/* Company logo styles */
+#company-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+
+/* Logo container hover styles */
+.logo-container:hover {
+    background-color: red; 
+    box-shadow: 0 4px 8px darkblue; 
+    transform: translateY(-4px); 
+}
+
+
+/* Product details styles */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 32px;
+    background-color: #f8f8f8;
+    padding: 21px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Product image styles */
+#product-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-right: 20px;
+}
+
+
+/* Product description styles */
+.product-description {
+    flex: 1;
+}
+
+
+/* Product description heading styles */
+.product-description h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+
+/* Contact form styles */
+.contact form {
+    margin-top: 31px;
+    max-width: 403px;
+    margin: 0 auto;
+    background-image: url('nox\ images/car racec.jpeg');
+    padding: 21px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px purple;
+}
+
+
+/* Contact form elements styles */
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Contact form button styles */
+.contact button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Contact form button before styles */
+.contact button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #555;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+
+
+/* Contact form button hover before styles */
+.contact button:hover::before {
+    height: 100%;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+/* Adjust slider height */
+    .slider {
+        height: 200px;
+    }
+/* Adjust product image margin */
+    #product-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+/* Adjust product details layout for smaller screens */
+    .product-details {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Image gallery styles */
+.image-gallery {
+    text-align: center;
+    padding: 40px 0;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px red;
+    background-image: url('nox\ images/mega.jpeg');
+}
+
+
+
+/* Image grid styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Image item styles */
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+    
+}
+
+
+/* Image item image styles */
+.image-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+/* Image item hover styles */
+.image-item:hover {
+    box-shadow: 0 4px 8px yellow; 
+    transform: translateY(-4px); 
+}
+
+
+/* Image item hover image styles */
+.image-item:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
+/* Define a custom font */
+@font-face {
+    font-family: 'GamingFont';
+    src: url('path_to_custom_font.woff2') format('woff2'), 
+         url('path_to_custom_font.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Apply custom font to body */
+body {
+    font-family: 'GamingFont', Arial, sans-serif;
+    font-size: 1.5em;
+    color: gold;
+    text-shadow: 2px 3px 5px purple;
+    text-align: center;
+    margin-top: 23px;
+}
+
+
+
+/* About page styles */
+.about-page {
+    background-size: cover;
+    background-image: url('nox\ images/gunfight.jpeg');
+    background-position: center;
+}
+
+
+
+/* About page footer styles */
+.about-foot {
+    text-align: center;
+    padding: 21px 0;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+
+}
+
+
+
+/* Contact page styles */
+.contact-foot {
+    text-align: center;
+    padding: 21px 0;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+
+}
+
+
+
+/* Product page styles */
+.product-foot {
+    text-align: center;
+    padding: 21px 0;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+
+}
+
+
+
+
+.about h1, h2, h3, h4, h5, h6{
+    font-size: 31px; 
+    font-weight: bold;
+    margin-top: 21px 0;
+
+}
+
+
+
+.contact-page {
+    background-image: url('nox\ images/nintendo.jpeg'); 
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+.product-page {
+    background-image: url('nox\ images/gamingss.webp'); 
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+
+/* Game list styles */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 21px;
+}
+
+
+
+/* Game styles */
+.game {
+    text-align: center;
+    padding: 21px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Game image styles */
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+/* Image container image styles */
+.image-container img {
+    width: 60%; 
+    max-height: 200px;
+    object-fit: 16px;
+    border-radius: 50px;
+}
+
+
+
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 11px 21px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/* Button before styles */
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #555;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+
+
+
+/* Button hover styles */
+.btn:hover {
+    background-color: #f8ca3d;
+    transform: translateY(-2px);
+}
+
+
+
+/* Button hover before styles */
+.btn:hover::before {
+    height: 100%;
+}
+
+
+
+/* Game styles with hover effect */
+.game {
+    position: relative;
+    overflow: hidden;
+    background-image: url('nox\ images/classi.jpeg');
+    transform: perspective(1000px) translateZ(0);
+}
+
+
+
+/* Game before hover effect */
+.game::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('nox\ images/classi.jpeg');
+    opacity: 0;
+    transform: scale(2) rotate(45deg);
+    transform-origin: center center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+
+
+/* Game hover before effect */
+.game:hover::before {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+
+
+/* Game hover image effect */
+.game:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+
+
+/* Buy Now button styles */
+.buy-now-btn {
+    
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/* Buy Now button before styles */
+.buy-now-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: left 0.3s ease-in-out;
+}
+
+
+
+/* Buy Now button hover before styles */
+.buy-now-btn:hover::before {
+    left: 100%;
+}
+
+
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 11px;
+    right: 11px;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideIn 0.3s ease-in-out, fadeOut 0.3s 1.7s ease-in-out forwards;
+}
+
+
+/* Slide in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Fade out animation */
+@keyframes fadeOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Cart icon styles */
+.cart {
+    position: fixed;
+    top: 21px;
+    right: 21px;
+}
+
+
+/* Cart icon container styles */
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Cart icon image styles */
+.cart-icon img {
+    width: 31px; 
+    vertical-align: middle;
+}
+
+
+
+/* Cart counter styles */
+#cart-counter {
+    position: absolute;
+    top: -6px;
+    right: -11px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 51%;
+    padding: 4px 7px;
+    font-size: 13px;
+}
+
